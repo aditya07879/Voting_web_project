@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./partials/head") %>
+
+<body class="bg-white text-slate-900">
+
+  <!-- NAVBAR -->
+  <%- include("./partials/nav") %>
+
+  <main class="min-h-screen">
+
+    <!-- HERO SECTION -->
+    <section class="bg-[#FBE8A6]">
+      <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-3xl md:text-5xl font-bold text-[#303C6C] leading-tight mb-4">
+            Your Vote. Your Power.
+          </h1>
+
+          <p class="text-base md:text-lg text-[#303C6C] font-normal mb-8 max-w-md">
+            A simple, secure, and transparent way to cast your vote online in seconds.
+          </p>
+
+          <a href="/vote"
+            class="inline-flex items-center justify-center rounded-md px-6 py-3 text-sm md:text-base font-semibold bg-[#F4976C] text-white hover:opacity-90 transition">
+            Start Voting
+          </a>
+        </div>
+
+        <div class="flex justify-center md:justify-end">
+          <div class="w-64 h-64 md:w-72 md:h-72 border-2 border-dashed border-[#303C6C] rounded-xl flex items-center justify-center">
+            <div class="text-center text-xs md:text-sm text-[#303C6C]/80">
+              Minimal line-art illustration<br>(replace with SVG)
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY VOTE SECTION -->
+    <section class="bg-white">
+      <div class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="text-2xl md:text-3xl font-semibold text-[#303C6C] mb-8">
+          Why Vote with VoteNow?
+        </h2>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="bg-[#B4DFE5] rounded-xl p-5 flex flex-col space-y-3">
+            <div class="w-10 h-10 rounded-full bg-[#303C6C]/10 flex items-center justify-center">
+              <span class="text-[#303C6C] text-lg font-bold">✓</span>
+            </div>
+            <h3 class="text-lg font-semibold text-[#303C6C]">
+              Quick &amp; Secure
+            </h3>
+            <p class="text-sm text-gray-700">
+              Cast your vote in seconds with encryption and secure backend handling.
+            </p>
+          </div>
+
+          <div class="bg-[#B4DFE5] rounded-xl p-5 flex flex-col space-y-3">
+            <div class="w-10 h-10 rounded-full bg-[#303C6C]/10 flex items-center justify-center">
+              <span class="text-[#303C6C] text-lg font-bold">◎</span>
+            </div>
+            <h3 class="text-lg font-semibold text-[#303C6C]">
+              Transparent Results
+            </h3>
+            <p class="text-sm text-gray-700">
+              Every vote is counted and visible in realtime dashboards.
+            </p>
+          </div>
+
+          <div class="bg-[#B4DFE5] rounded-xl p-5 flex flex-col space-y-3">
+            <div class="w-10 h-10 rounded-full bg-[#303C6C]/10 flex items-center justify-center">
+              <span class="text-[#303C6C] text-lg font-bold">✔</span>
+            </div>
+            <h3 class="text-lg font-semibold text-[#303C6C]">
+              Verified Voters Only
+            </h3>
+            <p class="text-sm text-gray-700">
+              Strong verification ensures every ballot is tied to a real, valid voter.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+ <!-- CURRENT VOTING SECTION -->
+<section class="bg-[#F4976C]">
+  <div class="max-w-6xl mx-auto px-4 py-16">
+
+    <h2 class="text-2xl md:text-3xl font-semibold text-white mb-6 text-center">
+      Voting Happening Now
+    </h2>
+
+    <!-- CENTER THE CARD -->
+    <div class="flex justify-center">
+      <div class="bg-white rounded-xl shadow-lg border border-[#303C6C]/20 overflow-hidden w-full max-w-xl">
+
+        <!-- Header -->
+        <div class="bg-[#303C6C] text-white px-4 py-3 text-sm font-semibold">
+          Ongoing Elections
+        </div>
+
+        <!-- List -->
+        <div class="divide-y divide-gray-200 text-sm text-[#303C6C]">
+
+          <!-- Item 1 -->
+          <div class="px-4 py-4 flex items-center justify-between">
+            <div>
+              <div class="font-semibold">College Presidential Election</div>
+              <div class="text-xs text-gray-600">Ends in: 3 hours</div>
+            </div>
+            <a href="/vote" class="text-[#303C6C] font-semibold text-xs hover:underline">
+              Vote →
+            </a>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="px-4 py-4 flex items-center justify-between">
+            <div>
+              <div class="font-semibold">Cultural Committee Voting</div>
+              <div class="text-xs text-gray-600">Ends in: 6 hours</div>
+            </div>
+            <a href="/vote" class="text-[#303C6C] font-semibold text-xs hover:underline">
+              Vote →
+            </a>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="px-4 py-4 flex items-center justify-between">
+            <div>
+              <div class="font-semibold">Class Representative Election</div>
+              <div class="text-xs text-gray-600">Ends in: 1 day</div>
+            </div>
+            <a href="/vote" class="text-[#303C6C] font-semibold text-xs hover:underline">
+              Vote →
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- FEATURE SECTION -->
+    <section class="bg-[#D2FDFF]">
+      <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+        <div class="flex justify-center md:justify-start">
+          <div class="w-64 h-64 md:w-72 md:h-72 border-2 border-dashed border-[#303C6C] rounded-xl flex items-center justify-center">
+            <div class="text-center text-xs md:text-sm text-[#303C6C]/80">
+              Dashboard illustration<br>(replace)
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-2xl md:text-3xl font-semibold text-[#303C6C] mb-4">
+            Built for Modern Online Voting
+          </h2>
+
+          <ul class="space-y-3 text-sm md:text-base">
+            <li class="flex items-start space-x-3">
+              <span class="mt-1 text-[#303C6C]">•</span>
+              <span>Instant vote submission</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="mt-1 text-[#303C6C]">•</span>
+              <span>Realtime counting</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="mt-1 text-[#303C6C]">•</span>
+              <span>Fraud detection</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE RESULTS SECTION -->
+   
+
+  </main>
+
+  <!-- FOOTER -->
+  <%- include("./partials/footer") %>
+
+  <!-- SCRIPTS -->
+  <%- include("./partials/script") %>
+
+</body>
+</html>

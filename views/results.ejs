@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head") %>
+<body class="bg-white text-slate-900">
+
+  <%- include("./partials/nav") %>
+
+  <main class="min-h-screen">
+
+    <!-- TITLE SECTION -->
+    <section class="bg-[#B4DFE5]">
+      <div class="max-w-6xl mx-auto px-4 py-10">
+        <h1 class="text-3xl md:text-4xl font-bold text-[#303C6C] mb-2">
+          Live Results
+        </h1>
+        <p class="text-xs md:text-sm text-[#303C6C]">
+          Auto-refresh every 10 seconds.
+        </p>
+      </div>
+    </section>
+
+    <!-- TOP SUMMARY STATS -->
+    <section class="bg-white">
+      <div class="max-w-6xl mx-auto px-4 py-10">
+        <div class="grid gap-6 md:grid-cols-3">
+
+          <!-- Total Votes -->
+          <div class="bg-[#FBE8A6] rounded-xl p-5 shadow-sm">
+            <div class="text-xs font-medium text-[#303C6C]/80 mb-1">
+              Total Votes
+            </div>
+            <div class="text-2xl md:text-3xl font-bold text-[#303C6C]">
+              3,345
+            </div>
+          </div>
+
+          <!-- Highest Voted Candidate -->
+          <div class="bg-[#FBE8A6] rounded-xl p-5 shadow-sm">
+            <div class="text-xs font-medium text-[#303C6C]/80 mb-1">
+              Highest Voted Candidate
+            </div>
+            <div class="text-base md:text-lg font-bold text-[#303C6C]">
+              Alex Sharma
+            </div>
+            <div class="text-xs text-[#303C6C]/80 mt-1">
+              Unity Party
+            </div>
+          </div>
+
+          <!-- Seats/Winners -->
+          <div class="bg-[#FBE8A6] rounded-xl p-5 shadow-sm">
+            <div class="text-xs font-medium text-[#303C6C]/80 mb-1">
+              Declared Winners
+            </div>
+            <div class="text-2xl md:text-3xl font-bold text-[#303C6C]">
+              2
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS TABLE -->
+    <section class="bg-white">
+      <div class="max-w-6xl mx-auto px-4 pb-12">
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+
+          <!-- Table Header -->
+          <div class="grid grid-cols-5 text-xs font-semibold bg-[#303C6C] text-white">
+            <div class="px-4 py-2">Candidate</div>
+            <div class="px-4 py-2">Party</div>
+            <div class="px-4 py-2 text-right">Votes</div>
+            <div class="px-4 py-2 text-right">%</div>
+            <div class="px-4 py-2 text-center">Status</div>
+          </div>
+
+          <!-- Table Rows (sample data) -->
+          <!-- Row 1 -->
+          <div class="grid grid-cols-5 text-xs bg-[#D2FDFF]">
+            <div class="px-4 py-2 flex items-center">Alex Sharma</div>
+            <div class="px-4 py-2 flex items-center">Unity</div>
+            <div class="px-4 py-2 flex items-center justify-end">1,245</div>
+            <div class="px-4 py-2 flex items-center justify-end">37%</div>
+            <div class="px-4 py-2 flex items-center justify-center">
+              <span class="px-2 py-1 rounded-full text-[10px] bg-green-100 text-green-800">
+                Winner
+              </span>
+            </div>
+
+            <!-- Progress Bar Row -->
+            <div class="col-span-5 px-4 pb-2">
+              <div class="w-full h-2 rounded-full bg-[#FBE8A6] overflow-hidden">
+                <div class="h-2 bg-[#F4976C]" style="width: 37%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="grid grid-cols-5 text-xs bg-[#B4DFE5]">
+            <div class="px-4 py-2 flex items-center">Riya Verma</div>
+            <div class="px-4 py-2 flex items-center">Progress</div>
+            <div class="px-4 py-2 flex items-center justify-end">1,120</div>
+            <div class="px-4 py-2 flex items-center justify-end">33%</div>
+            <div class="px-4 py-2 flex items-center justify-center">
+              <span class="px-2 py-1 rounded-full text-[10px] bg-yellow-100 text-yellow-800">
+                Trailing
+              </span>
+            </div>
+
+            <div class="col-span-5 px-4 pb-2">
+              <div class="w-full h-2 rounded-full bg-[#FBE8A6] overflow-hidden">
+                <div class="h-2 bg-[#F4976C]" style="width: 33%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="grid grid-cols-5 text-xs bg-[#D2FDFF]">
+            <div class="px-4 py-2 flex items-center">Karan Mehta</div>
+            <div class="px-4 py-2 flex items-center">Forward</div>
+            <div class="px-4 py-2 flex items-center justify-end">980</div>
+            <div class="px-4 py-2 flex items-center justify-end">30%</div>
+            <div class="px-4 py-2 flex items-center justify-center">
+              <span class="px-2 py-1 rounded-full text-[10px] bg-yellow-100 text-yellow-800">
+                Trailing
+              </span>
+            </div>
+
+            <div class="col-span-5 px-4 pb-2">
+              <div class="w-full h-2 rounded-full bg-[#FBE8A6] overflow-hidden">
+                <div class="h-2 bg-[#F4976C]" style="width: 30%;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CHARTS SECTION (placeholder layout) -->
+    <section class="bg-[#D2FDFF]">
+      <div class="max-w-6xl mx-auto px-4 py-12 grid gap-6 md:grid-cols-2">
+        <!-- Pie chart card -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <div class="h-1 bg-[#303C6C]"></div>
+          <div class="p-5">
+            <h3 class="text-sm font-semibold text-[#303C6C] mb-2">
+              Vote Share (Pie)
+            </h3>
+            <div class="w-full h-40 border-2 border-dashed border-[#B4DFE5] rounded-lg flex items-center justify-center text-xs text-gray-500">
+              Chart placeholder (use real chart lib)
+            </div>
+          </div>
+        </div>
+
+        <!-- Bar chart card -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <div class="h-1 bg-[#303C6C]"></div>
+          <div class="p-5">
+            <h3 class="text-sm font-semibold text-[#303C6C] mb-2">
+              Votes by Candidate (Bar)
+            </h3>
+            <div class="w-full h-40 border-2 border-dashed border-[#B4DFE5] rounded-lg flex items-center justify-center text-xs text-gray-500">
+              Chart placeholder (use real chart lib)
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <%- include("./partials/footer") %>
+  <%- include("./partials/script") %>
+</body>
+</html>
