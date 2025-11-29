@@ -3,10 +3,8 @@
   <%- include("./partials/head") %>
 <body class="bg-white text-slate-900">
 
-  <!-- Admin layout with sidebar -->
-  <div class="min-h-screen flex">
 
-    <!-- SIDEBAR -->
+  <div class="min-h-screen flex">
     <aside class="w-60 bg-[#303C6C] text-[#D2FDFF] flex flex-col">
       <div class="px-4 py-4 text-lg font-semibold border-b border-[#D2FDFF]/20">
         Admin Panel
@@ -19,9 +17,9 @@
       </nav>
     </aside>
 
-    <!-- MAIN CONTENT -->
+   
     <main class="flex-1 bg-gray-50">
-      <%- include("partials/navbar") %>
+      <%- include("partials/nav") %>
 
       <div class="max-w-6xl mx-auto px-4 py-8 space-y-6">
 
@@ -29,7 +27,7 @@
           Admin Dashboard
         </h1>
 
-        <!-- Cards row -->
+ 
         <div class="grid gap-6 md:grid-cols-3">
           <div class="bg-[#B4DFE5] rounded-xl p-5">
             <div class="text-xs text-[#303C6C]/80 mb-1">Total Users</div>
@@ -45,7 +43,7 @@
           </div>
         </div>
 
-        <!-- Actions / Tables -->
+    
         <div class="grid gap-6 md:grid-cols-2 mt-4">
           <div class="bg-white rounded-xl border border-gray-100 p-5 text-sm">
             <h2 class="text-sm font-semibold text-[#303C6C] mb-3">

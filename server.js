@@ -2,11 +2,11 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-// Correct view engine setup
+
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, 'views'));
 
-// Correct route
+
 app.get('/', (req, res) => {
     res.render('home');
 });
