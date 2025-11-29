@@ -1,11 +1,17 @@
 const express = require('express');
 const path = require('path');
+const connectDB = require('./db/db');
+
 const app = express();
+
+connectDB();
 
 
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, 'views'));
+app.use(express.urlencoded({ extended: true }));
 
+app.use('/admin', require('./Routes/admin.route'));
 
 app.get('/', (req, res) => {
     res.render('home');
